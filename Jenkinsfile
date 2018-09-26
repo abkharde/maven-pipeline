@@ -5,7 +5,6 @@ node {
    stage('Compile package'){
      def mvnHome = tool name: 'maven-3.4', type: 'maven'
      dir('my-app') {
-      some block
      sh "${mvnHome}/bin/mvn package"
 	}
   }
